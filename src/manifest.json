@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "",
+    "version": "1.0",
+    "description": "This extension allows you to search selected text.",
+    "permissions": [
+      "contextMenus",
+      "activeTab"
+    ],
+    "background": {
+      "scripts": ["background.js"]
+    },
+    "content_scripts": [
+      {
+        "js": ["content.js"],
+        "matches": ["<all_urls>"],
+        "all_frames": true
+      }
+    ],
+    "browser_action": {
+      "default_icon": "icon.png"
+    }
+  }
