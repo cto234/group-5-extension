@@ -10,8 +10,11 @@ firefox.contextMenus.create({
     }
   });
   
+  import data from '../../data/updatedrmp.json';
+
   function searchSelectedText(selectedText) {
     firefox.tabs.create({
-      url: "https://www.ratemyprofessors.com/search/teachers?query="+ selectedText + "&sid=U2Nob29sLTY3NQ=="
+      url: "https://www.ratemyprofessors.com/search/teachers?query="+ selectedText + "&sid=U2Nob29sLTY3NQ==",
+      //rating: data[selectedText]
     });
   }
