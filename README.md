@@ -22,8 +22,7 @@ The search.js in popup is to get the url
 
 I have also uploaded a json file called updatedrmp.json in data directory with all the rating for NYU professors, which have all the rating information for each professor. We could use this data if we want to display ratings immediately
 
-
-<code>
+```
 ├── src
 │   ├── popup
 │   │   └── search.js
@@ -40,4 +39,4 @@ I have also uploaded a json file called updatedrmp.json in data directory with a
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md
 └── AUTHORS.md
-</code>
+```
