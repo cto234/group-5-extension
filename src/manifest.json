@@ -1,23 +1,28 @@
 {
     "manifest_version": 2,
-    "name": "",
+    "name": "Jumping into RateMyProfessor",
     "version": "1.0",
     "description": "This extension allows you to search selected text.",
     "permissions": [
       "contextMenus",
-      "activeTab"
+      "activeTab", 
+      "tabs"
     ],
     "background": {
       "scripts": ["background.js"]
     },
     "content_scripts": [
       {
-        "js": ["content.js"],
+        "js": ["main.js"],
         "matches": ["<all_urls>"],
         "all_frames": true
       }
     ],
     "browser_action": {
-      "default_icon": "icon.png"
+      "default_icon": "icons/temp.png", 
+      "default_popup": "popup/popup.html"
+    }, 
+    "icons": {
+      "48": "icons/temp.png"
     }
   }
