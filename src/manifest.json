@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Jumping into RateMyProfessor",
+  "name": "Jumping into RateMyProfessors at NYU",
   "version": "1.0",
   "content_security_policy": "script-src 'self'; object-src 'self'",
-  "description": "This extension allows you to search selected text.",
+  "description": "This extension allows you to enter an NYU's professor's name into a search bar and it will redirect directly to their RateMyProfessors website.",
   "permissions": [
     "contextMenus",
     "activeTab", 
@@ -20,7 +20,7 @@
     }
   ],
   "browser_action": {
-    "default_icon": "icons/temp.png", 
+    "default_icon": "icons/rmp_logo.png", 
     "default_popup": "popup/popup.html"
   }, 
   "icons": {
