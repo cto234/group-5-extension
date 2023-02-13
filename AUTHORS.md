@@ -1,4 +1,4 @@
-Connor O'Doherty
-Ishana Goyal
-Pasindu Weerasinghe
-Jiawei Zhang
+- [Connor O'Doherty](https://github.com/cto234)
+- [Ishana Goyal](https://github.com/ishana-goyal)
+- Pasindu Weerasinghe
+- [Jiawei Zhang](https://github.com/jiawei-zhang-a)

@@ -1,26 +1,27 @@
 # RateMyProfessor 
 RateMyProfessor Search Add-on
-This is a Firefox add-on that provides an easy way to search for professors on RateMyProfessor. Simply select some text on any webpage and right-click to search for that text on RateMyProfessor. The search results will be displayed in a dropdown menu.
+This is a Firefox add-on that provides an easy way to search professors on RateMyProfessor. Simply press the extension icon on the extension bar, and type the NYU professor's name in the pop-up search bar. It will automatically redirect to their RateMyProfessor page. Note, this is limited to NYU professors, as the extenstion was built with NYU students as the core audience.
 
-Features
+## Features
 Quickly search for professors on RateMyProfessor
-Display search results in a convenient dropdown menu
+Immediately routes to RateMyProfessors.com
 Works on any webpage
-Usage
-Install the add-on in your Firefox browser
-Select some text on any webpage
-Right-click and select "Search on RateMyProfessor"
-The search results will be displayed in a dropdown menu
-Note
-This add-on is not affiliated with RateMyProfessor. It is simply a tool that makes it easier to search for professors on their website.
 
+## Usage
+1. Install the add-on in your Firefox browser
+2. Click the RMP icon on the extension bar
+3. Type in any professor's name in the resulting search bar
+4. Automatically be redirected to their RateMyProfessor website
 
-The basic idea is extract the selectedText and redirect to this url: "https://www.ratemyprofessors.com/search/teachers?query="+ selectedText + "&sid=U2Nob29sLTY3NQ=="
+NOTE: This add-on is not affiliated with RateMyProfessor in any way. It is simply a tool that makes it easier to search for professors on their website.
 
-The main.js in content_scripts is to monitor the mouse and selectedText.
-The search.js in popup is to get the url
+The basic idea is to extract the text inputted in the search bar and redirect to this url: "https://www.ratemyprofessors.com/search/teachers?query="+ [inputted text] + "&sid=U2Nob29sLTY3NQ=="
+- Every university has a unique identifier on the RateMyProfessor website
+- We decided to limit the results to NYU professors with NYU students as the intended audience.
 
-I have also uploaded a json file called updatedrmp.json in data directory with all the rating for NYU professors, which have all the rating information for each professor. We could use this data if we want to display ratings immediately
+Notable files include [popup.html](src/popup/popup.html) which renders the search bar, and [search.js](src/popup/search.js) that redirects to the appropriate webpage. 
+
+There is also a JSON file included, called updatedrmp.json in the data directory. This contains all the ratings for NYU professors (though this is not used in this iteration of the extension, it is useful if we'd like to display the results without redirecting to the RateMyProfessor website).
 
 ```
 ├── src

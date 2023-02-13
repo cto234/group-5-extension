@@ -1,4 +1,4 @@
-Code of Conduct
+# Code of Conduct
 
 Our open source project is dedicated to providing a welcoming and respectful community for all its contributors and users. We expect everyone who participates in this project to abide by the following code of conduct.
 
@@ -24,3 +24,5 @@ Unacceptable behavior will not be tolerated, and those who engage in it may be b
 This code of conduct may be revised at any time by the project maintainers.
 
 We value your participation in this project, and we hope that you will help us create a positive and inclusive community for all.
+
+Please note that inspiration for this Code of Conduct originates from the [Contributor Convenant](https://www.contributor-covenant.org/). 
