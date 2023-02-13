@@ -26,18 +26,23 @@ There is also a JSON file included, called updatedrmp.json in the data directory
 ```
 ├── src
 │   ├── popup
-│   │   └── search.js
+│   │   ├── search.js
+│   │   └── popup.html
 │   ├── manifest.json
+│   ├── icons
+│   │   ├── temp.png
+│   │   └── rmp_logo.png
 │   ├── icon
 │   ├── css
 │   │   └── main.css
-│   └── content_scripts
-│       └── main.js
+│   ├── content_scripts
+│   │   └── main.js
+│   └── background.js
 ├── data
 │   └── updatedrmp.json
 ├── README.md
 ├── LICENSE
-├── CONTRIBUTING.md
+├── Contributing.md
 ├── CODE_OF_CONDUCT.md
 └── AUTHORS.md
 ```
